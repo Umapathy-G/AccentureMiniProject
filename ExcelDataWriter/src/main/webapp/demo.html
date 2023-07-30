@@ -1,0 +1,22 @@
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" href="css/uploadfile.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form method="POST" action="/upload" enctype="multipart/form-data">
+	<div class="file-upload">
+		<div class="file-select">
+			<div class="file-select-button" id="fileName">Choose File</div>
+			<div class="file-select-name" id="noFile">No file chosen...</div>
+			<input type="file" name="file" id="chooseFile"
+				accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+		</div>
+	</div>
+	<div id="uploadbtn">
+		<i id="ico" class="fa fa-upload"></i><input id="inputuploadbtn" class="upload_btn" type="submit" value="Upload" onclick="uploadFile()"></input>
+	</div>
+</form>
+<div class="copyright">
+	By <a href="http://www.accenture.com/" target="_blank">Accenture</a>.
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
